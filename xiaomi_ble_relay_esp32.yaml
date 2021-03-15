@@ -1,0 +1,32 @@
+substitutions:
+  devicename: <set a really nice name here>
+
+esphome:
+  name: $devicename
+  platform: ESP32
+  board: nodemcu-32s
+  
+wifi:
+  ssid: ""
+  password: ""
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "$devicename Fallback Hotspot"
+    password: "12345abcde"
+
+captive_portal:
+
+# Enable logging
+logger:
+
+ota:
+
+mqtt:
+  broker: <broker IP>
+  username: <MQTT username>
+  password: <MQTT password>
+  discovery: false
+  id: mqtt_client
+
+<<: !include xiaomi_ble_sensors.yaml
