@@ -15,7 +15,7 @@ Settings I use:
 - <b>Advertising type must be set as custom.</b>
 - Smiley off
 - Battery icon disabled
-- 10 seconds report time
+- 1 min report time
 
 ### esp32
 Connect and prepare an esp32 according to the esphome documentation.
